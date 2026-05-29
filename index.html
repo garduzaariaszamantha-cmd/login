@@ -1,34 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Iniciar Sesión</title>
- <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crema Noble | Heladería Artesanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilos_maquetacion.css">
+    <link rel="icon" type="image/png" href="img/CremaNoble.jpg">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19TBM1LC04"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-19TBM1LC04');
+    </script>
 </head>
 <body>
-  <!-- Contenedor del formulario -->
-  <div class="login-box">
-    <h2>Iniciar Sesión</h2>
-    <form action="#" method="post" id="formularioLogin">
-      <!-- Campo de usuario -->
-      <label for="usuario">Usuario</label>
-      <input type="text" id="usuario" name="usuario" required />
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/CremaNoble.jpg" alt="Crema Noble">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fi fi-rr-home"></i> Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fi fi-rr-ice-cream"></i> Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Helados Artesanales</a></li>
+                            <li><a href="#">Sundae y Copas</a></li>
+                            <li><a href="#">Milkshakes Premium</a></li>
+                            <li><a href="#">Postres Helados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fi fi-rr-tags"></i> Promociones</a></li>
+                    <li><a href="#"><i class="fi fi-rr-phone-call"></i> Contacto</a></li>
+                    <li><a href="login.html" class="btn-login"><i class="fi fi-rr-user"></i> Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <!-- Campo de contraseña -->
-      <label for="contrasena">Contraseña</label>
-      <input type="password" id="contrasena" name="contrasena" required />
-
-      <!-- Botón de envío -->
-      <input type="submit" value="Entrar" />
-    </form>
-
-    <!-- Enlaces adicionales -->
-    <div class="extra">
-      <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-      <p><a href="#">Crear cuenta nueva</a></p>
+    <!-- BANNER CON 6 IMÁGENES -->
+    <div class="swiper mainBanner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/1.jpeg" alt="Oferta Limitada">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/2.jpeg" alt="Crema Noble">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/3.jpeg" alt="Napolitano Premium">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/4.jpeg" alt="Banner 4">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/5.jpeg" alt="Banner 5">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="banner-link">
+                    <img src="banner/6.jpeg" alt="Banner 6">
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
-  </div>
-  <script type="text/javascript" src="login.js"></script>
+
+    <main class="container" style="padding: 100px 0;">
+        <h1 style="font-size: 3.2rem; margin-bottom: 20px; color: #FF4081;">Crema Noble</h1>
+        <p style="font-size: 1.25rem; max-width: 700px; margin-bottom: 50px; line-height: 1.6;">
+            Helados artesanales, milkshakes cremosos y postres irresistibles.<br>
+            <strong>El sabor que te hace sonreír.</strong>
+        </p>
+
+        <section class="seccion-info">
+            <h2 class="titulo-seccion">Productos Destacados</h2>
+            <div class="contenedor-dos">
+                <div class="cuadro cuadro-grande">
+                    <div class="imagen-placeholder">
+                        <img src="img/1.jpg" alt="Helados Premium">
+                    </div>
+                    <h3>Helados Artesanales</h3>
+                    <p>Sabores únicos hechos con ingredientes premium y amor.</p>
+                    <a href="#" class="leer-mas">Ver sabores</a>
+                </div>
+                <div class="cuadro cuadro-grande">
+                    <div class="imagen-placeholder">
+                        <img src="img/2.jpg" alt="Sundae">
+                    </div>
+                    <h3>Sundae y Copas</h3>
+                    <p>La experiencia más dulce. Perfectos para compartir.</p>
+                    <a href="#" class="leer-mas">Ver más</a>
+                </div>
+            </div>
+
+            <h2 class="titulo-seccion">Promociones y Novedades</h2>
+            <div class="contenedor-tres">
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <img src="img/3.jpg" alt="Promo">
+                    </div>
+                    <h4>Promo Especial</h4>
+                    <p>2 helados medianos + topping por solo $89</p>
+                </div>
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <video controls>
+                            <source src="img/Download.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Nuevos Sabores</h4>
+                    <p>Prueba nuestros lanzamientos de temporada</p>
+                </div>
+                <div class="cuadro cuadro-pequeno">
+                    <div class="media-container">
+                        <img src="img/4.jpg" alt="Milkshake">
+                    </div>
+                    <h4>Milkshakes Premium</h4>
+                    <p>Cremosos y llenos de sabor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📍 Benito Juárez 216, La Candelaria, 86605 Paraíso, Tab.</p>
+                    <p>📞 +52 933 164 4168</p>
+                    <p>✉️ hola@cremanoble.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <p>Paraíso, Tabasco</p>
+                    <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.9421249819943!2d-93.21719478960398!3d18.3954849826017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ee8cd43c8d1bd9%3A0x80d4d2b77e16ad9!2sParque%20Venustiano%20Carranza!5e0!3m2!1ses!2smx!4v1780026919325!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Crema Noble. Todos los derechos reservados.
+                <span id="contador-visitas" style="margin-left: 20px; font-weight: 500; color: #FF4081;"></span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/529331644168" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="banner.js"></script>
+
+    <!-- Contador de visitas con LocalStorage -->
+    <script>
+        let visitas = localStorage.getItem("visitasCremaNoble");
+        if (visitas === null) {
+            visitas = 0;
+        }
+        visitas++;
+        localStorage.setItem("visitasCremaNoble", visitas);
+        document.getElementById("contador-visitas").textContent = "👥 Visitas: " + visitas;
+    </script>
 </body>
 </html>
